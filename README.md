@@ -2,8 +2,6 @@
 
 This sample project uses Amazon Bedrock Claude V3 sonnet LLM to create a draft blog from an image uploaded into Amazon S3 bucket
 
-Learn more about this pattern at Serverless Land Patterns: https://serverlessland.com/patterns/s3-lambda-bedrock-sam
-
 Important: this application uses various AWS services and there are costs associated with these services after the Free Tier usage - please see the [AWS Pricing page](https://aws.amazon.com/pricing/) for details. You are responsible for any AWS costs incurred. No warranty is implied in this example.
 
 ## Requirements
@@ -21,12 +19,12 @@ Amazon Bedrock users need to request access to models before they are available 
 
 1. Create a new directory, navigate to that directory in a terminal and clone the GitHub repository:
    ```bash
-   git clone https://github.com/aws-samples/serverless-patterns
+   git clone https://github.com/aws-samples/amazon-bedrock-claudev3-sonnet-blog-generation.git
    ```
 
 2. Change directory to the pattern directory:
    ```bash
-   cd serverless-patterns/s3-lambda-bedrock-sam
+   cd amazon-bedrock-claudev3-sonnet-blog-generation
    ```
 
 3. From the command line, use AWS SAM to deploy the AWS resources for the pattern as specified in the template.yml file:
