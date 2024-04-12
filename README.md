@@ -49,6 +49,7 @@ Amazon Bedrock users need to request access to models before they are available 
 
 7. Provide a name for the Lambda layer and the region. Such as: 
    ```bash
+   Enter the Lambda function name from the SAM deploy output: {InvokeBedrockClaudeV3Function}
    Enter the name of the Layer: fpdf2_layer
    Enter the AWS Region: {your-region}
    ```
@@ -72,34 +73,6 @@ Amazon Bedrock users need to request access to models before they are available 
    ```bash
    Enter the LayerVersionArn from the above command: arn:aws:lambda:us-east-1:xxxxxxxxxxxx:layer:fpdf2_layer:1
    ```
-
-9. Please copy the value of `InvokeBedrockClaudeV3Function` from the `sam deploy --guided` output and provide that as response to next question. Such as:
-   ```bash
-   Enter the Lambda function name from the SAM deploy output: your-stack-name-InvokeBedrockClaudeV3Function-xxxxxxxxxxxx
-   ```
-   The script will now run aws cli command to add the newly created layer to the Lambda function.
-   It will show output like below:
-   ```bash
-   Adding the new layer to your Lambda function's configuration. Please wait ...
-   {
-      "FunctionName": "your-stack-name-InvokeBedrockClaudeV3Function-xxxxxxxxxxxx",
-      ......
-      ......
-      "State": "Active",
-      "LastUpdateStatus": "InProgress",
-      "LastUpdateStatusReason": "The function is being created.",
-      "LastUpdateStatusReasonCode": "Creating",
-      "PackageType": "Zip",
-      "Architectures": [
-         "arm64"
-      ],
-      "EphemeralStorage": {
-         "Size": 512
-      }
-   }      
-   ```    
-
-10. You may have to press `q` to come out of the output. The setup is ready for testing.
 
 ## How it works
 

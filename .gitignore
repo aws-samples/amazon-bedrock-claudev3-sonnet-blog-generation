@@ -1,3 +1,5 @@
 samconfig.toml
 .DS_Store
 images/.DS_Store
+draft-blog.pdf
+fpdf2_layer/*
